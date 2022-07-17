@@ -7,6 +7,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -38,6 +39,9 @@ public class Product {
 
     @Column(name="active")
     private boolean active;
+
+    @Column(name="sizes")
+    private String sizes;
 
     @Column(name="units_in_stock")
     private int unitsInStock;
